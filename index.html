@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nirasha Aluthgamage | Portfolio</title>
+  
+  <!-- Tailwind CSS & Lucide Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Fonts: Instrument Serif + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Instrument Serif"', 'serif'],
+            sans: ['"Inter"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #040914;
+      font-family: 'Inter', sans-serif;
+    }
+    .space-bg {
+      background: radial-gradient(circle at 50% 15%, #0d1e34 0%, #040914 75%);
+      min-height: 100vh;
+    }
+    .glass-card {
+      background: linear-gradient(180deg, rgba(13, 27, 46, 0.90) 0%, rgba(7, 15, 27, 0.98) 100%);
+      border: 1px solid rgba(56, 189, 248, 0.16);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+    }
+    .action-pill {
+      background: rgba(14, 34, 56, 0.65);
+      border: 1px solid rgba(56, 189, 248, 0.22);
+      transition: all 0.2s ease;
+    }
+    .action-pill:hover {
+      background: rgba(20, 50, 82, 0.9);
+      border-color: rgba(56, 189, 248, 0.45);
+      transform: translateY(-1px);
+    }
+    .gallery-box {
+      background: rgba(5, 12, 22, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 18px;
+    }
+    .img-display-frame {
+      background: #020611;
+      border: 1px solid rgba(56, 189, 248, 0.18);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px;
+    }
+    .keyword-pill {
+      background: rgba(14, 34, 56, 0.7);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      transition: all 0.2s ease;
+    }
+    .keyword-pill:hover {
+      background: rgba(20, 50, 82, 0.9);
+      border-color: rgba(56, 189, 248, 0.45);
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body class="text-slate-200 space-bg flex flex-col items-center justify-between p-3 sm:p-6 pb-32">
+
+  <!-- ========================================== -->
+  <!-- 1. HOME VIEW                               -->
+  <!-- ========================================== -->
+  <main id="view-home" class="w-full max-w-sm mt-10 sm:mt-16 rounded-[32px] glass-card p-8 flex flex-col items-center text-center relative overflow-hidden backdrop-blur-xl">
+    
+    <div class="relative w-32 h-32 rounded-full p-1 border-2 border-cyan-400/80 mb-5 shadow-xl shadow-cyan-950/40">
+      <img 
+        src="profile.jpg" 
+        alt="Nirasha Aluthgamage" 
+        class="w-full h-full rounded-full object-cover object-top"
+        onerror="this.src='https://avatars.githubusercontent.com/nirasha-aluthgamage'"
+      />
+    </div>
+
+    <h1 class="text-3xl sm:text-4xl font-serif tracking-normal text-white font-normal leading-tight mb-2">
+      Nirasha<br/>Aluthgamage
+    </h1>
+
+    <p class="text-[11px] uppercase tracking-[0.22em] text-cyan-300 font-semibold mb-4">
+      INDUSTRIAL AUTOMATION AND ROBOTICS
+    </p>
+
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-medium mb-6">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      <span>Based in Colombo, LK</span>
+    </div>
+
+    <div class="w-full flex flex-col gap-2.5 items-stretch">
+      <a href="https://www.linkedin.com/in/nirasha-aluthgamage-9259a2340?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="action-pill py-2.5 px-4 rounded-xl flex items-center justify-center gap-2.5 text-xs text-white">
+        <i data-lucide="linkedin" class="w-4 h-4 text-cyan-400"></i>
+        <span class="font-medium">LinkedIn Profile</span>
+      </a>
+
+      <a href="mailto:jayaninirasha18@gmail.com" class="action-pill py-2.5 px-4 rounded-xl flex items-center justify-center gap-2.5 text-xs text-white">
+        <i data-lucide="mail" class="w-4 h-4 text-cyan-400"></i>
+        <span class="font-medium">Send Email</span>
+      </a>
+
+      <div class="grid grid-cols-2 gap-2.5">
+        <a href="https://wa.me/94774235364" target="_blank" class="action-pill py-2.5 px-3 rounded-xl flex items-center justify-center gap-2 text-xs text-white">
+          <i data-lucide="message-square" class="w-3.5 h-3.5 text-emerald-400"></i>
+          <span class="font-medium">WhatsApp</span>
+        </a>
+
+        <a href="tel:+94774235364" class="action-pill py-2.5 px-3 rounded-xl flex items-center justify-center gap-2 text-xs text-white">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-cyan-400"></i>
+          <span class="font-medium">Call</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- ========================================== -->
+  <!-- 2. RESEARCH TAB VIEW                       -->
+  <!-- ========================================== -->
+  <main id="view-research" class="w-full max-w-lg mt-5 rounded-[32px] glass-card p-5 sm:p-7 flex flex-col text-left relative overflow-hidden backdrop-blur-xl hidden">
+    
+    <div class="flex items-center justify-between pb-3 border-b border-slate-800 mb-4">
+      <div class="inline-flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest">
+        <i data-lucide="microscope" class="w-4 h-4"></i>
+        <span>Capstone Research</span>
+      </div>
+      <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-950/60 border border-cyan-800/40 text-cyan-300">2026</span>
+    </div>
+
+    <h2 class="text-xl sm:text-2xl font-serif text-white leading-snug mb-2">
+      Autonomous RoboShuttle System for Warehouse Inventory Transport with Machine Learning Enabled Scheduling &amp; Monitoring
+    </h2>
+    <p class="text-xs text-slate-400 mb-6">
+      Department of Applied Computing, Faculty of Computing and Technology, University of Kelaniya
+    </p>
+
+    <!-- SINGLE COLUMN HERO FORMAT: CAD MODEL & PROTOTYPE -->
+    <div class="space-y-4 mb-6">
+      <div class="img-display-frame">
+        <div class="w-full min-h-[380px] sm:min-h-[460px] flex items-center justify-center overflow-hidden bg-slate-950/80 rounded-lg p-2">
+          <img 
+            src="IMG_1433.jpeg" 
+            alt="CAD Model" 
+            class="w-full max-h-[500px] object-contain"
+            onerror="imgFallback(this, ['IMG_1433.jpg', 'cad_model.png'])"
+          />
+        </div>
+        <span class="text-sm font-mono text-emerald-300 py-2 font-semibold">CAD Model</span>
+      </div>
+
+      <div class="img-display-frame">
+        <div class="w-full min-h-[380px] sm:min-h-[460px] flex items-center justify-center overflow-hidden bg-slate-950/80 rounded-lg p-2">
+          <img 
+            src="IMG_1184.jpg" 
+            alt="Prototype" 
+            class="w-full max-h-[500px] object-contain rounded"
+            onerror="imgFallback(this, ['IMG_1184.jpeg', 'prototype.jpg'])"
+          />
+        </div>
+        <span class="text-sm font-mono text-cyan-300 py-2 font-semibold">Prototype</span>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-3 text-center font-mono mb-6">
+      <div class="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800">
+        <div class="text-2xl sm:text-3xl font-bold text-emerald-400">80%</div>
+        <div class="text-[11px] text-slate-400 mt-0.5">Overall Success Rate</div>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800">
+        <div class="text-2xl sm:text-3xl font-bold text-cyan-400">&le; 5 cm</div>
+        <div class="text-[11px] text-slate-400 mt-0.5">Positioning Accuracy</div>
+      </div>
+    </div>
+
+    <!-- SUBSYSTEM VERIFICATION GALLERY -->
+    <div class="space-y-6">
+      <div class="text-xs font-mono text-cyan-300 uppercase tracking-widest border-b border-slate-800 pb-2">
+        Subsystem Verification Gallery
+      </div>
+
+      <!-- 1. Sensing Tier -->
+      <div class="gallery-box space-y-4">
+        <div class="flex items-center justify-between text-sm font-semibold text-white">
+          <span class="flex items-center gap-2">
+            <i data-lucide="scale" class="w-4 h-4 text-cyan-400"></i>
+            1. Sensing Tier &amp; Load Cell Calibration
+          </span>
+          <span class="text-[11px] font-mono text-emerald-400 bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/30">99.87% Acc.</span>
+        </div>
+        
+        <div class="img-display-frame">
+          <div class="w-full h-56 sm:h-64 flex items-center justify-center overflow-hidden bg-slate-950/70 rounded-lg">
+            <img src="IMG_1444.jpg" alt="Sensing Tier Components" class="w-full h-full object-contain p-1" onerror="imgFallback(this, ['IMG_1444.jpeg'])" />
+          </div>
+          <span class="text-[11px] font-mono text-slate-300 py-1">ESP32, HX711, XL4015 Buck Converter &amp; Load Cell Bracket</span>
+        </div>
+
+        <div class="space-y-3">
+          <div class="img-display-frame">
+            <div class="w-full h-52 sm:h-60 flex items-center justify-center overflow-hidden bg-slate-950/70 rounded-lg">
+              <img src="IMG_9241.jpg" alt="Load Cell Assembly" class="w-full h-full object-contain rounded" onerror="imgFallback(this, ['IMG_9241.jpeg'])" />
+            </div>
+            <span class="text-[11px] font-mono text-slate-300 py-1">Load Cell Mechanical Assembly</span>
+          </div>
+
+          <div class="img-display-frame">
+            <div class="w-full h-52 sm:h-60 flex items-center justify-center overflow-hidden bg-slate-950/70 rounded-lg">
+              <img src="IMG_9280.jpg" alt="Load Cell Calibration" class="w-full h-full object-contain rounded" onerror="imgFallback(this, ['IMG_9280.jpeg'])" />
+            </div>
+            <span class="text-[11px] font-mono text-slate-300 py-1">530.0g Mass Calibration Bench</span>
+          </div>
+        </div>
+
+        <p class="text-xs text-slate-400 leading-relaxed pt-1">
+          5kg strain gauge load cell mounted inside dual acrylic plates. Multiplier tuned to 406.65 with dead-band filtering limiting background noise to &plusmn;1.5 g/s.
+        </p>
+      </div>
+
+      <!-- 2. Autonomous Navigation -->
+      <div class="gallery-box space-y-4">
+        <div class="flex items-center justify-between text-sm font-semibold text-white">
+          <span class="flex items-center gap-2">
+            <i data-lucide="compass" class="w-4 h-4 text-cyan-400"></i>
+            2. Autonomous Navigation &amp; Vision Tracking
+          </span>
+          <span class="text-[11px] font-mono text-cyan-400 bg-cyan-950/40 px-2 py-0.5 rounded border border-cyan-800/30">0.52 px Error</span>
+        </div>
+        
+        <div class="space-y-3">
+          <div class="img-display-frame">
+            <div class="w-full h-52 sm:h-60 flex items-center justify-center overflow-hidden bg-slate-950/70 rounded-lg">
+              <img src="IMG_1445.jpg" alt="Differential Drive Base" class="w-full h-full object-contain p-1" onerror="imgFallback(this, ['IMG_1445.jpeg'])" />
+            </div>
+            <span class="text-[11px] font-mono text-slate-300 py-1">Differential Drive &amp; Encoder Motors</span>
+          </div>
+
+          <div class="img-display-frame">
+            <div class="w-full h-52 sm:h-60 flex items-center justify-center overflow-hidden bg-slate-950/70 rounded-lg">
+              <img src="IMG_1447.jpg" alt="Camera Calibration" class="w-full h-full object-contain p-1" onerror="imgFallback(this, ['IMG_1447.jpeg'])" />
+            </div>
+            <span class="text-[11px] font-mono text-slate-300 py-1">MATLAB Camera Calibrator UI</span>
+          </div>
+        </div>
+
+        <div class="img-display-frame">
+          <div class="w-full h-56 bg-slate-950/90 rounded-lg flex items-center justify-center p-2">
+            <svg class="w-48 h-48" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+              <rect width="8" height="8" fill="black" />
+              <rect x="1" y="1" width="2" height="1" fill="white" />
+              <rect x="4" y="1" width="1" height="2" fill="white" />
+              <rect x="6" y="1" width="1" height="2" fill="white" />
+              <rect x="2" y="2" width="2" height="3" fill="white" />
+              <rect x="1" y="4" width="1" height="1" fill="white" />
+              <rect x="3" y="4" width="1" height="1" fill="white" />
+              <rect x="2" y="5" width="1" height="1" fill="white" />
+              <rect x="4" y="5" width="2" height="1" fill="white" />
+              <rect x="4" y="6" width="1" height="1" fill="white" />
+            </svg>
+          </div>
+          <span class="text-xs font-mono text-cyan-300 py-1.5 font-semibold">AprilTag 36h11 Fiducial Marker Standard</span>
+        </div>
+
+        <p class="text-xs text-slate-400 leading-relaxed pt-1">
+          Differential drive powered by dual JGB37-520 DC motors. Closed-loop AprilTag fiducial tracking compensates for open-loop encoder odometry drift down to &le; 5cm.
+        </p>
+      </div>
+
+      <!-- 3. Vertical Lifting System -->
+      <div class="gallery-box space-y-3">
+        <div class="flex items-center justify-between text-sm font-semibold text-white">
+          <span class="flex items-center gap-2">
+            <i data-lucide="arrow-up-down" class="w-4 h-4 text-cyan-400"></i>
+            3. Vertical Lifting System
+          </span>
+          <span class="text-[11px] font-mono text-emerald-400 bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/30">90% Rate</span>
+        </div>
+        
+        <div class="img-display-frame">
+          <div class="w-full h-60 sm:h-64 flex items-center justify-center overflow-hidden bg-slate-950/70 rounded-lg">
+            <img src="IMG_1446.jpg" alt="Vertical Lift Lead Screw and NEMA17" class="w-full h-full object-contain p-1" onerror="imgFallback(this, ['IMG_1446.jpeg'])" />
+          </div>
+          <span class="text-[11px] font-mono text-slate-300 py-1">T8 Dual Lead Screw, KP08 Bearings &amp; NEMA 17 Drive</span>
+        </div>
+
+        <p class="text-xs text-slate-400 leading-relaxed pt-1">
+          Synchronized dual lead screws driven by parallel NEMA17 steppers along 8mm linear rails, reaching 0mm, 250mm, and 500mm tiers at 25 mm/s.
+        </p>
+      </div>
+
+      <!-- 4. Gripping Mechanism -->
+      <div class="gallery-box space-y-3">
+        <div class="flex items-center justify-between text-sm font-semibold text-white">
+          <span class="flex items-center gap-2">
+            <i data-lucide="magnet" class="w-4 h-4 text-cyan-400"></i>
+            4. Gripping Mechanism
+          </span>
+          <span class="text-[11px] font-mono text-cyan-400 bg-cyan-950/40 px-2 py-0.5 rounded border border-cyan-800/30">150mm Stroke</span>
+        </div>
+        
+        <div class="img-display-frame">
+          <div class="w-full h-60 sm:h-64 flex items-center justify-center overflow-hidden bg-slate-950/70 rounded-lg">
+            <img src="IMG_1179.jpg" alt="Electromagnetic Gripping Platform" class="w-full h-full object-contain p-1" onerror="imgFallback(this, ['IMG_1179.jpeg'])" />
+          </div>
+          <span class="text-[11px] font-mono text-slate-300 py-1">Extending Horizontal Platform &amp; Electromagnet</span>
+        </div>
+
+        <p class="text-xs text-slate-400 leading-relaxed pt-1">
+          Extending carriage with 5kg 5V electromagnet controlled via IRF540N MOSFET switch. Achieved 100% crate retention across retract strokes.
+        </p>
+      </div>
+
+      <!-- 5. Local Monitoring Dashboard -->
+      <div class="gallery-box space-y-2">
+        <div class="flex items-center justify-between text-sm font-semibold text-white">
+          <span class="flex items-center gap-2">
+            <i data-lucide="layout-dashboard" class="w-4 h-4 text-cyan-400"></i>
+            5. Local Monitoring Dashboard
+          </span>
+          <span class="text-[11px] font-mono text-emerald-400 bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/30">3s Latency</span>
+        </div>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Cloud-independent Streamlit edge UI logging depletion trajectories, inventory thresholds, and dispatch commands with 0% packet loss over local Wi-Fi.
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+
+  <!-- ========================================== -->
+  <!-- 3. EDUCATION TAB VIEW                      -->
+  <!-- ========================================== -->
+  <main id="view-education" class="w-full max-w-lg mt-5 rounded-[32px] glass-card p-6 sm:p-8 flex flex-col text-left relative overflow-hidden backdrop-blur-xl hidden">
+    
+    <div class="flex items-center justify-between pb-3 border-b border-slate-800 mb-6">
+      <div class="inline-flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest">
+        <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+        <span>Education</span>
+      </div>
+    </div>
+
+    <div class="gallery-box space-y-4 mb-6">
+      <div>
+        <div class="flex items-center justify-between">
+          <h2 class="text-2xl sm:text-3xl font-serif text-white leading-tight">
+            Bachelor of Engineering Technology<br/>Honours Degree
+          </h2>
+          <span class="text-xs font-mono text-cyan-400 bg-cyan-950/40 px-2.5 py-1 rounded-full border border-cyan-800/30 font-semibold flex-shrink-0 ml-2">
+            2022-2026
+          </span>
+        </div>
+        <p class="text-xs sm:text-sm font-mono text-cyan-300 tracking-wide mt-2">
+          Specialization in Industrial Automation &amp; Robotics
+        </p>
+      </div>
+
+      <div class="text-xs text-slate-300 flex items-center justify-between pt-2 border-t border-slate-800">
+        <div class="flex items-center gap-2">
+          <i data-lucide="building-2" class="w-4 h-4 text-slate-400 flex-shrink-0"></i>
+          <span>Faculty of Computing and Technology, University of Kelaniya, Sri Lanka</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="space-y-3">
+      <div class="text-xs font-mono text-cyan-300 uppercase tracking-widest border-b border-slate-800 pb-2">
+        Core Domains &amp; Competencies
+      </div>
+
+      <div class="flex flex-wrap gap-2 pt-1">
+        <span class="keyword-pill text-xs px-3.5 py-1.5 rounded-full text-slate-200">Industrial Automation</span>
+        <span class="keyword-pill text-xs px-3.5 py-1.5 rounded-full text-slate-200">Robotics</span>
+        <span class="keyword-pill text-xs px-3.5 py-1.5 rounded-full text-slate-200">TPM</span>
+        <span class="keyword-pill text-xs px-3.5 py-1.5 rounded-full text-slate-200">5S</span>
+        <span class="keyword-pill text-xs px-3.5 py-1.5 rounded-full text-slate-200">Lean Management</span>
+        <span class="keyword-pill text-xs px-3.5 py-1.5 rounded-full text-slate-200">PLC Programming</span>
+        <span class="keyword-pill text-xs px-3.5 py-1.5 rounded-full text-slate-200">SolidWorks</span>
+        <span class="keyword-pill text-xs px-3.5 py-1.5 rounded-full text-slate-200">EHS</span>
+        <span class="keyword-pill text-xs px-3.5 py-1.5 rounded-full text-slate-200">Hydraulic and Pneumatic Systems</span>
+        <span class="keyword-pill text-xs px-3.5 py-1.5 rounded-full text-slate-200">Production</span>
+      </div>
+    </div>
+
+  </main>
+
+
+  <!-- ========================================== -->
+  <!-- 4. WORK EXPERIENCES TAB VIEW               -->
+  <!-- ========================================== -->
+  <main id="view-experiences" class="w-full max-w-lg mt-5 rounded-[32px] glass-card p-6 sm:p-8 flex flex-col text-left relative overflow-hidden backdrop-blur-xl hidden">
+    
+    <div class="flex items-center justify-between pb-3 border-b border-slate-800 mb-6">
+      <div class="inline-flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest">
+        <i data-lucide="briefcase" class="w-4 h-4"></i>
+        <span>Work Experiences</span>
+      </div>
+    </div>
+
+    <div class="space-y-6">
+
+      <!-- Role 1: Ceylon Cold Stores PLC -->
+      <div class="gallery-box space-y-3">
+        <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-1 sm:gap-2">
+          <div>
+            <h3 class="text-xl sm:text-2xl font-serif text-white leading-tight">
+              Electrical &amp; Electronic Engineering Intern
+            </h3>
+            <p class="text-xs font-mono text-cyan-300 mt-1">
+              Ceylon Cold Stores PLC (Elephant House) / Ranala, Sri Lanka
+            </p>
+          </div>
+          <span class="text-[11px] font-mono text-cyan-400 bg-cyan-950/40 px-2.5 py-1 rounded-full border border-cyan-800/30 whitespace-nowrap self-start mt-1 sm:mt-0 font-medium">
+            August 2025 - March 2026
+          </span>
+        </div>
+
+        <ul class="space-y-2 text-xs text-slate-300 list-disc list-inside leading-relaxed border-t border-slate-800/80 pt-3">
+          <li>Contributed to several industrial projects throughout the research, design and factory floor installation.</li>
+          <li>Prepared the Bill of Quantities (BOQ) and co-authored a Request for Proposal (RFP) for vendor bidding.</li>
+          <li>Gained hands-on exposure to automated Glass Line &amp; PET Line bottling operations and the ice cream production process.</li>
+          <li>Participated in the Annual Factory Maintenance &amp; Overhaul and safety toolbox meetings.</li>
+        </ul>
+      </div>
+
+      <!-- Role 2: ATG Intelligent Glove Solutions -->
+      <div class="gallery-box space-y-3">
+        <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-1 sm:gap-2">
+          <div>
+            <h3 class="text-xl sm:text-2xl font-serif text-white leading-tight">
+              Semi-Skilled Worker
+            </h3>
+            <p class="text-xs font-mono text-cyan-300 mt-1">
+              ATG&reg; - Intelligent Glove Solutions / EPZ Wathupitiwala, Sri Lanka
+            </p>
+          </div>
+          <span class="text-[11px] font-mono text-slate-400 bg-slate-900/60 px-2.5 py-1 rounded-full border border-slate-800 whitespace-nowrap self-start mt-1 sm:mt-0 font-medium">
+            March 2021 - August 2022
+          </span>
+        </div>
+
+        <ul class="space-y-2 text-xs text-slate-300 list-disc list-inside leading-relaxed border-t border-slate-800/80 pt-3">
+          <li>Operated and monitored glove manufacturing machines across continuous shift operations, following SOPs and 5S standards to maintain consistent quality output.</li>
+          <li>Performed routine quality checks and collaborated with maintenance and quality teams to resolve machine faults and process deviations.</li>
+          <li>Maintained workplace cleanliness and safety standards throughout tenure.</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- ========================================== -->
+  <!-- 5. PROJECT TAB VIEW                        -->
+  <!-- ========================================== -->
+  <main id="view-project" class="w-full max-w-lg mt-5 rounded-[32px] glass-card p-5 sm:p-7 flex flex-col text-left relative overflow-hidden backdrop-blur-xl hidden">
+    
+    <div class="flex items-center justify-between pb-3 border-b border-slate-800 mb-5">
+      <div class="inline-flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest">
+        <i data-lucide="layers" class="w-4 h-4"></i>
+        <span>Industrial Projects</span>
+      </div>
+      <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-950/60 border border-cyan-800/40 text-cyan-300">2025 - 2026</span>
+    </div>
+
+    <!-- ================================================= -->
+    <!-- PROJECT 1: CIP Final Rinse Water Recovery System -->
+    <!-- ================================================= -->
+    <div class="gallery-box space-y-4 mb-6">
+      <div>
+        <span class="text-[10px] font-mono text-cyan-400 uppercase tracking-wider block mb-1">
+          Ceylon Cold Stores PLC (Elephant House)
+        </span>
+        <h2 class="text-xl sm:text-2xl font-serif text-white leading-snug">
+          Design of an Automated Final Rinse Water Recovery System for CIP Utility Applications
+        </h2>
+        <p class="text-xs text-slate-400 mt-2">
+          Soft Drink Factory / Clean-In-Place (CIP) Sanitization Network
+        </p>
+      </div>
+
+      <!-- P&ID Diagrams (Single Column Format) -->
+      <div class="space-y-4 pt-2">
+        <div class="text-xs font-mono text-slate-400 uppercase tracking-wider">
+          Process &amp; Instrumentation Diagrams (P&amp;ID)
+        </div>
+
+        <!-- 1. Existing System P&ID (IMG_1460) -->
+        <div class="img-display-frame">
+          <div class="w-full min-h-[260px] sm:min-h-[320px] flex items-center justify-center overflow-hidden bg-white rounded-lg p-1">
+            <img 
+              src="IMG_1460.jpeg" 
+              alt="Existing System P&ID" 
+              class="w-full max-h-[420px] object-contain"
+              onerror="imgFallback(this, ['IMG_1460.jpg'])"
+            />
+          </div>
+          <span class="text-xs font-mono text-slate-300 py-1.5 font-semibold">Existing CIP System P&amp;ID</span>
+        </div>
+
+        <!-- 2. Proposed System P&ID (IMG_1461) -->
+        <div class="img-display-frame">
+          <div class="w-full min-h-[260px] sm:min-h-[320px] flex items-center justify-center overflow-hidden bg-white rounded-lg p-1">
+            <img 
+              src="IMG_1461.jpg" 
+              alt="Proposed System P&ID" 
+              class="w-full max-h-[420px] object-contain"
+              onerror="imgFallback(this, ['IMG_1461.jpeg'])"
+            />
+          </div>
+          <span class="text-xs font-mono text-cyan-300 py-1.5 font-semibold">Proposed Water Recovery P&amp;ID</span>
+        </div>
+      </div>
+
+      <!-- Metrics for CIP Recovery -->
+      <div class="grid grid-cols-3 gap-2 text-center font-mono pt-2">
+        <div class="p-2.5 rounded-xl bg-slate-900/70 border border-slate-800">
+          <div class="text-lg font-bold text-emerald-400">96%</div>
+          <div class="text-[9px] text-slate-400 mt-0.5">Water Saving</div>
+        </div>
+        <div class="p-2.5 rounded-xl bg-slate-900/70 border border-slate-800">
+          <div class="text-lg font-bold text-cyan-400">5.4M L</div>
+          <div class="text-[9px] text-slate-400 mt-0.5">Annual Recovery</div>
+        </div>
+        <div class="p-2.5 rounded-xl bg-slate-900/70 border border-slate-800">
+          <div class="text-lg font-bold text-amber-400">2.75M</div>
+          <div class="text-[9px] text-slate-400 mt-0.5">LKR Cost Value</div>
+        </div>
+      </div>
+
+      <!-- Engineering Scope -->
+      <div class="space-y-2 border-t border-slate-800/80 pt-3">
+        <div class="text-xs font-semibold text-white">Engineering Scope &amp; Contribution:</div>
+        <ul class="space-y-1.5 text-xs text-slate-300 list-disc list-inside leading-relaxed">
+          <li>Physically mapped utility headers and pipeline diameters to draft the baseline P&amp;ID.</li>
+          <li>Engineered a 10,000 L PVC storage tank recovery loop with inline butterfly control valves.</li>
+          <li>Integrated level, conductivity, and pH auditing sensors to safeguard recovered rinse water.</li>
+          <li>Designed automated diverting lines routing captured water to the Pre-Rinse cycle and factory floor washing.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ================================================= -->
+    <!-- PROJECT 2: Conveyor Optimization & Warmer Relocation -->
+    <!-- ================================================= -->
+    <div class="gallery-box space-y-4">
+      <div>
+        <span class="text-[10px] font-mono text-cyan-400 uppercase tracking-wider block mb-1">
+          Ceylon Cold Stores PLC (Elephant House)
+        </span>
+        <h2 class="text-xl sm:text-2xl font-serif text-white leading-snug">
+          Design and Optimization of a Conveyor Segment to Facilitate Warmer Relocation and Eliminate Bottlenecks at SDF Plant 02
+        </h2>
+        <p class="text-xs text-slate-400 mt-2">
+          Soft Drink Factory / Modular High-Speed Bottle Conveyor System
+        </p>
+      </div>
+
+      <!-- Conveyor Schematics (Single Column Format) -->
+      <div class="space-y-4 pt-2">
+        <div class="text-xs font-mono text-slate-400 uppercase tracking-wider">
+          Layout Schematics &amp; Bottleneck Analysis
+        </div>
+
+        <!-- Image 5: Existing Conveyor Layout -->
+        <div class="img-display-frame">
+          <div class="w-full min-h-[260px] sm:min-h-[320px] flex items-center justify-center overflow-hidden bg-white rounded-lg p-1">
+            <img 
+              src="image5.jpg" 
+              alt="Existing Conveyor Layout" 
+              class="w-full max-h-[420px] object-contain"
+              onerror="imgFallback(this, ['image5.jpeg', 'IMG_1462.jpg'])"
+            />
+          </div>
+          <span class="text-xs font-mono text-slate-300 py-1.5 font-semibold">Existing Conveyor Layout</span>
+        </div>
+
+        <!-- Image 6: Bottleneck on the Existing Conveyor -->
+        <div class="img-display-frame">
+          <div class="w-full min-h-[260px] sm:min-h-[320px] flex items-center justify-center overflow-hidden bg-white rounded-lg p-1">
+            <img 
+              src="image6.jpg" 
+              alt="Bottleneck on the Existing Conveyor" 
+              class="w-full max-h-[420px] object-contain"
+              onerror="imgFallback(this, ['image6.jpeg', 'IMG_1463.jpg'])"
+            />
+          </div>
+          <span class="text-xs font-mono text-amber-300 py-1.5 font-semibold">Bottleneck on Existing Conveyor (13-Strip Merge)</span>
+        </div>
+
+        <!-- Image 7: Proposed Conveyor Layout -->
+        <div class="img-display-frame">
+          <div class="w-full min-h-[260px] sm:min-h-[320px] flex items-center justify-center overflow-hidden bg-white rounded-lg p-1">
+            <img 
+              src="image7.jpg" 
+              alt="Proposed Conveyor Layout" 
+              class="w-full max-h-[420px] object-contain"
+              onerror="imgFallback(this, ['image7.jpeg', 'IMG_1464.jpg'])"
+            />
+          </div>
+          <span class="text-xs font-mono text-cyan-300 py-1.5 font-semibold">Proposed Optimized Conveyor Layout</span>
+        </div>
+      </div>
+
+      <!-- Metrics for Conveyor Optimization -->
+      <div class="grid grid-cols-3 gap-2 text-center font-mono pt-2">
+        <div class="p-2.5 rounded-xl bg-slate-900/70 border border-slate-800">
+          <div class="text-lg font-bold text-emerald-400">8,300 mm</div>
+          <div class="text-[9px] text-slate-400 mt-0.5">Horizontal Run</div>
+        </div>
+        <div class="p-2.5 rounded-xl bg-slate-900/70 border border-slate-800">
+          <div class="text-lg font-bold text-cyan-400">0 Jams</div>
+          <div class="text-[9px] text-slate-400 mt-0.5">Eliminated Bend</div>
+        </div>
+        <div class="p-2.5 rounded-xl bg-slate-900/70 border border-slate-800">
+          <div class="text-lg font-bold text-amber-400">BOQ / RFP</div>
+          <div class="text-[9px] text-slate-400 mt-0.5">Vendor Approved</div>
+        </div>
+      </div>
+
+      <!-- Technical Scope & Engineering Highlights -->
+      <div class="space-y-2 border-t border-slate-800/80 pt-3">
+        <div class="text-xs font-semibold text-white">Engineering Scope &amp; Contribution:</div>
+        <ul class="space-y-1.5 text-xs text-slate-300 list-disc list-inside leading-relaxed">
+          <li>Measured factory floor dimensions by hand and updated the entire AutoCAD drawing for the conveyor system.</li>
+          <li>Repositioned the warmer unit and integrated a new 4,000 mm straight outfeed segment, removing a bending point.</li>
+          <li>Restructured the layout by adding an intermediate 6,850 mm straight buffer section (bringing total horizontal run to 8,300 mm).</li>
+          <li>Designed a shared shaft assembly driven by a 0.55 kW gear motor to maintain synchronized line speeds across segments.</li>
+          <li>Resolved the 13-strip merge bottleneck by reducing unnecessary chain segments and enforcing smooth transfer angles under 45&deg;.</li>
+          <li>Formulated the complete food-grade Bill of Quantities (BOQ) and Request for Proposal (RFP) for vendor bidding.</li>
+        </ul>
+      </div>
+    </div>
+
+  </main>
+
+
+  <!-- ========================================== -->
+  <!-- 6. CURRICULUM VITAE (CV) TAB VIEW          -->
+  <!-- ========================================== -->
+  <main id="view-cv" class="w-full max-w-2xl mt-5 rounded-[32px] glass-card p-5 sm:p-7 flex flex-col text-left relative overflow-hidden backdrop-blur-xl hidden">
+    
+    <div class="flex items-center justify-between pb-3 border-b border-slate-800 mb-4">
+      <div class="inline-flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest">
+        <i data-lucide="file-text" class="w-4 h-4"></i>
+        <span>Curriculum Vitae</span>
+      </div>
+
+      <a 
+        href="Nirasha%20Aluthgamage%20Resume_2.pdf" 
+        target="_blank" 
+        download="Nirasha Aluthgamage Resume_2.pdf"
+        class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-400/40 text-cyan-300 text-xs font-mono transition-colors"
+      >
+        <i data-lucide="download" class="w-3.5 h-3.5"></i>
+        <span>Download PDF</span>
+      </a>
+    </div>
+
+    <div class="w-full rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 shadow-2xl flex flex-col items-center">
+      <object 
+        data="Nirasha%20Aluthgamage%20Resume_2.pdf#toolbar=1&navpanes=0&scrollbar=1" 
+        type="application/pdf" 
+        class="w-full h-[680px] rounded-2xl"
+      >
+        <div class="p-8 text-center flex flex-col items-center justify-center space-y-4 my-auto h-[400px]">
+          <i data-lucide="file-check" class="w-12 h-12 text-cyan-400"></i>
+          <div>
+            <h3 class="text-lg font-serif text-white">Nirasha Aluthgamage - Resume</h3>
+            <p class="text-xs text-slate-400 mt-1">If your mobile browser does not display the PDF inline, tap below to view the official file.</p>
+          </div>
+          <a 
+            href="Nirasha%20Aluthgamage%20Resume_2.pdf" 
+            target="_blank" 
+            class="px-5 py-2.5 rounded-full bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-semibold text-xs transition-colors flex items-center gap-2"
+          >
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+            <span>Open PDF Directly</span>
+          </a>
+        </div>
+      </object>
+    </div>
+
+    <p class="text-[11px] text-slate-500 font-mono text-center mt-3">
+      Swipe or scroll inside the window to review all 3 pages of the complete resume.
+    </p>
+
+  </main>
+
+
+  <!-- ========================================== -->
+  <!-- FLOATING DOCK BOTTOM NAVIGATION            -->
+  <!-- ========================================== -->
+  <footer class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-sm">
+    <div class="bg-slate-900/90 backdrop-blur-xl border border-slate-700/60 rounded-2xl p-2 px-3 flex items-center justify-around shadow-2xl shadow-black/80">
+      
+      <button onclick="switchTab('home')" id="tab-home" class="flex flex-col items-center gap-1 text-cyan-400 transition-colors px-1">
+        <i data-lucide="home" class="w-4 h-4"></i>
+        <span class="text-[9px] font-medium tracking-tight">Home</span>
+      </button>
+
+      <button onclick="switchTab('research')" id="tab-research" class="flex flex-col items-center gap-1 text-slate-400 hover:text-slate-200 transition-colors px-1">
+        <i data-lucide="microscope" class="w-4 h-4"></i>
+        <span class="text-[9px] font-medium tracking-tight">Research</span>
+      </button>
+
+      <button onclick="switchTab('education')" id="tab-education" class="flex flex-col items-center gap-1 text-slate-400 hover:text-slate-200 transition-colors px-1">
+        <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+        <span class="text-[9px] font-medium tracking-tight">Education</span>
+      </button>
+
+      <button onclick="switchTab('experiences')" id="tab-experiences" class="flex flex-col items-center gap-1 text-slate-400 hover:text-slate-200 transition-colors px-1">
+        <i data-lucide="briefcase" class="w-4 h-4"></i>
+        <span class="text-[9px] font-medium tracking-tight">Experiences</span>
+      </button>
+
+      <button onclick="switchTab('project')" id="tab-project" class="flex flex-col items-center gap-1 text-slate-400 hover:text-slate-200 transition-colors px-1">
+        <i data-lucide="layers" class="w-4 h-4"></i>
+        <span class="text-[9px] font-medium tracking-tight">Project</span>
+      </button>
+
+      <button onclick="switchTab('cv')" id="tab-cv" class="flex flex-col items-center gap-1 text-slate-400 hover:text-slate-200 transition-colors px-1">
+        <i data-lucide="file-text" class="w-4 h-4"></i>
+        <span class="text-[9px] font-medium tracking-tight">CV</span>
+      </button>
+
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    function imgFallback(img, candidates) {
+      if (!img.dataset.failIndex) img.dataset.failIndex = 0;
+      let idx = parseInt(img.dataset.failIndex);
+      if (idx < candidates.length) {
+        img.dataset.failIndex = idx + 1;
+        img.src = candidates[idx];
+      }
+    }
+
+    function switchTab(target) {
+      const views = ['home', 'research', 'education', 'experiences', 'project', 'cv'];
+      const tabs = ['home', 'research', 'education', 'experiences', 'project', 'cv'];
+
+      tabs.forEach(t => {
+        const el = document.getElementById('tab-' + t);
+        if (el) {
+          if (t === target) {
+            el.className = 'flex flex-col items-center gap-1 text-cyan-400 transition-colors px-1';
+          } else {
+            el.className = 'flex flex-col items-center gap-1 text-slate-400 hover:text-slate-200 transition-colors px-1';
+          }
+        }
+      });
+
+      views.forEach(v => {
+        const viewEl = document.getElementById('view-' + v);
+        if (viewEl) {
+          if (v === target) {
+            viewEl.classList.remove('hidden');
+          } else {
+            viewEl.classList.add('hidden');
+          }
+        }
+      });
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
